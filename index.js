@@ -35,6 +35,7 @@ client.on("message", async (message) => {
     message.delete();
 
     async function playBarka() {
+      console.log("barka startuje!!!!!!");
       let listOfAllMembers = [];
 
       const barkaChanel = await message.guild.channels.create(
@@ -73,7 +74,7 @@ client.on("message", async (message) => {
       );
     }
 
-    let job1 = new cron.CronJob("0 37 21 * * *", playBarka);
+    let job1 = new cron.CronJob("0 55 23 * * *", playBarka);
 
     job1.start();
   }
