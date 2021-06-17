@@ -1,0 +1,21 @@
+{
+  "name": "dc_bot_barka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.5.3",
+    "corn": "^0.0.1",
+    "cron": "^1.8.2",
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^4.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "nodemon": "^2.0.7",
+    "ytdl": "^1.4.1"
+  }
+}
