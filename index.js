@@ -74,7 +74,7 @@ client.on("message", async (message) => {
       );
     }
 
-    let job1 = new cron.CronJob("0 55 23 * * *", playBarka);
+    let job1 = new cron.CronJob("01 13 * * *", playBarka);
 
     job1.start();
   }
@@ -91,5 +91,19 @@ client.on("message", async (message) => {
         console.log("Music has been finished!");
       }
     );
+  }
+});
+
+client.on("message", async (message) => {
+  const sendMessageFn = async () => {
+    message.channel.send("heh");
+  };
+
+  if (message.content === "/sendTime") {
+    message.delete();
+
+    let job1 = new cron.CronJob("22 11 * * *", sendMessageFn);
+
+    job1.start();
   }
 });
